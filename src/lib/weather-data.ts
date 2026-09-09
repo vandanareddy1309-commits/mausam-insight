@@ -298,7 +298,7 @@ export const CONDITION_LABEL: Record<Condition, string> = {
 };
 
 export function getCity(id: string): City {
-  return CITIES.find((c) => c.id === id) ?? CITIES[0];
+  return CITIES.find((c) => c.id === id) ?? CITIES[0]!;
 }
 
 export function alertsForCity(cityId: string) {
